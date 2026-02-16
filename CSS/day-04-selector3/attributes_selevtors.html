@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. targeting ny their attribute name*/
+        input[type]{
+            background-color: blue;
+        }
+        input[type="password"]{
+            background-color: green;
+        }
+         a[href*="Qspider"]{
+            text-decoration: none;
+
+         }
+         button[class~="btn"]{
+            background-color: brown;
+            padding: 8px 10px;
+            font-size:20px;
+             color: white;
+         }
+         .primary{
+            border: 2px solid red;
+         }
+         img[src$="png"]{
+            border: 2px solid saddlebrown;
+         }
+          img[src$="jpg"]{
+            border: 2px solid slateblue;
+         }
+         p[class^="first"]{
+            background-color: skyblue;
+         }
+          p[class^="second"]{
+            background-color: salmon;
+         }
+         p[class|="en"]{
+            border: 2px solid rebeccapurple;
+         }
+
+        
+    </style>
+</head>
+<body>
+    <h1>attribute selectors</h1>
+    <h2>input elements</h2>
+    <input type="text" placeholder="enter  your name">
+    <input type="email" placeholder="enter  your email">
+    <input type="password" placeholder="enter  your password">
+    <br/>
+    <br/>
+    <!--links-->
+    <a href="https://www.google.com/">google</a>
+     <a href="https://www.facebook.com/">facebook</a>
+     <a href="https://www.Qspiders.com/">Qspiders</a>
+
+     <!-- buttons-->
+      <button class="btn primary">primary</button>
+      <button class="btn secondary">secondary</button>
+<br/>
+<br/>
+<!--images-->
+       <img src="krish.jpg" alt="krish"/>
+        <img src="om.png" alt="om"/>
+<br/>
+<br/>
+        <p class="first para">first paragaraph</p>
+        <p class="second para">second paragaraph</p>
+<br/>
+<br/>
+        <p class="en-IN">Namaste</p>
+        <p class="en">hello</p>
+        <p class="fr">hii</p>
+        <p class="jp">zzz</p>
+        <p class="pf">xxx</p>
+
+</body>
+</html>

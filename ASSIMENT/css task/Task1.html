@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Real Estate</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .top-banner {
+            width: 100%;
+            height: 150px; 
+            background-image: url('https://c8.alamy.com/comp/AH920H/row-houses-in-the-victorian-architecture-style-with-bay-windows-balconies-AH920H.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* HEADINGS SECTION */
+        .heading-container {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        p.sub-text {
+            color: #777;
+            font-size: 16px;
+        }
+
+        /* MAIN GRID CONTAINER */
+        .properties-grid {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto 50px auto; 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* INDIVIDUAL CARD (COMMON STYLES) */
+        .card {
+            width: 260px;
+            height: 200px;
+            border-radius: 6px;
+            position: relative; 
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        /* The "For Rent" / "For Sale" tag */
+        .status-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 4px 8px;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+
+        /* Colors for badges */
+        .rent-color { background-color: #ff3366; }
+        .sale-color { background-color: #ffaa00; }
+
+        /* The dark box at the bottom */
+        .info-box {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            padding: 15px;
+            background-color: rgba(60, 60, 60, 0.65);
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .info-box h3 {
+            color: white;
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+
+        .info-box p {
+            color: #ddd;
+            font-size: 11px;
+            margin-bottom: 5px;
+        }
+
+        /* The Green Price Button */
+        .price {
+            background-color: #28a745;
+            color: white;
+            font-size: 11px;
+            padding: 3px 10px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        /* INDIVIDUAL BACKGROUND IMAGES */
+        #hero1 { background-image: url('https://thumbs.dreamstime.com/z/large-luxury-bungalows-islands-d-render-64862388.jpg'); } 
+        #hero2 { background-image: url('https://thearchitectsdiary.com/wp-content/uploads/2021/11/BR-Residence-25-1.jpg'); } 
+        #hero3 { background-image: url('https://cdna.artstation.com/p/assets/images/images/018/355/714/medium/steven-hong-sanctum-01.jpg?1559067052'); }
+        #hero4 { background-image: url('https://th.bing.com/th/id/OIP.S6exaVVXk95iXYSZ6DRTeQHaE8?w=280&h=186&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3'); } 
+        #hero5 { background-image: url('https://thearchitectsdiary.com/wp-content/uploads/2021/11/BR-Residence-25-1.jpg'); }
+        #hero6 { background-image: url('https://www.emporioarchitect.com/upload/portofolio/1280/desain-rumah-modern-3-setengah-lantai-43310322-8616794201022114748.jpg'); }
+        #hero7 { background-image: url('https://thearchitectsdiary.com/wp-content/uploads/2020/05/Featured-Images.jpg'); }
+        #hero8 { background-image: url('https://s3-ap-southeast-1.amazonaws.com/atap-main/gallery-full/437efd2d-368c-4b6a-bef4-988e57604a4b/3-storey-bungalow-house-start-from-empty-land.jpg'); }
+
+    </style>
+</head>
+<body>
+
+    <div class="top-banner"></div>
+
+    <div class="heading-container">
+        <h1>Luxurious Properties</h1>
+        <p class="sub-text">This is a showcase of our latest property listings.</p>
+    </div>
+
+    <div class="properties-grid">
+
+        <div class="card" id="hero1">
+            <div class="status-badge rent-color">FOR RENT</div>
+            <div class="info-box">
+                <h3>Stark Tower Penthouse</h3>
+                <p>📍 Manhattan, New York</p>
+                <div class="price">$50,000/month</div>
+            </div>
+        </div>
+
+        <div class="card" id="hero2">
+            <div class="status-badge sale-color">FOR SALE</div>
+            <div class="info-box">
+                <h3>Wayne Manor Estate</h3>
+                <p>📍 1007 Mountain Dr, Gotham</p>
+                <div class="price">$150,000,000</div>
+            </div>
+        </div>
+
+        <div class="card" id="hero3">
+            <div class="status-badge rent-color">FOR RENT</div>
+            <div class="info-box">
+                <h3>Sanctum Sanctorum</h3>
+                <p>📍 177A Bleecker St, NY</p>
+                <div class="price">$8,000/month</div>
+            </div>
+        </div>
+
+        <div class="card" id="hero4">
+            <div class="status-badge rent-color">FOR RENT</div>
+            <div class="info-box">
+                <h3>Wakanda Royal Suite</h3>
+                <p>📍 Birnin Zana, Golden City</p>
+                <div class="price">$20,000/month</div>
+            </div>
+        </div>
+
+        <div class="card" id="hero5">
+            <div class="status-badge sale-color">FOR SALE</div>
+            <div class="info-box">
+                <h3>Kent Farm House</h3>
+                <p>📍 Smallville, Kansas</p>
+                <div class="price">$450,000</div>
+            </div>
+        </div>
+
+        <div class="card" id="hero6">
+            <div class="status-badge rent-color">FOR RENT</div>
+            <div class="info-box">
+                <h3>Xavier's School</h3>
+                <p>📍 1407 Graymalkin Ln</p>
+                <div class="price">$15,000/month</div>
+            </div>
+        </div>
+
+        <div class="card" id="hero7">
+            <div class="status-badge sale-color">FOR SALE</div>
+            <div class="info-box">
+                <h3>The Lighthouse</h3>
+                <p>📍 Amnesty Bay, Maine</p>
+                <div class="price">$850,000</div>
+            </div>
+        </div>
+
+        <div class="card" id="hero8">
+            <div class="status-badge sale-color">FOR SALE</div>
+            <div class="info-box">
+                <h3>Asgardian Palace</h3>
+                <p>📍 Asgard, Nine Realms</p>
+                <div class="price">$990,000,000</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

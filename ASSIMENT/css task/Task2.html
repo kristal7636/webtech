@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inextrix - Our Offerings</title>
+    <style>
+        /* Basic CSS Reset & Background Properties */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Navbar using Flexbox */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo { font-weight: bold; font-size: 20px; color: #3b4c7d; }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav-links a { text-decoration: none; color: #555; font-size: 14px; }
+
+        .btn-talk {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        /* Header Section */
+        .header-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        /* Main Grid using Flexbox */
+        .offerings-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Service Cards */
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            width: 45%; /* Two cards per row */
+            min-width: 300px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-sizing: border-box;
+        }
+
+        .card h2 { color: #3b4c7d; margin-top: 0; }
+
+        .card p { font-size: 14px; line-height: 1.6; color: #666; }
+
+        /* Icon Grid within Cards */
+        .tech-icons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+
+        .tech-item {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+        }
+
+        .icon-placeholder {
+            width: 40px;
+            height: 40px;
+            background-color: #eee;
+            border-radius: 50%;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">INEXTRIX</div>
+        <ul class="nav-links">
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">SOLUTIONS</a></li>
+            <li><a href="#">OUR PRODUCTS</a></li>
+            <li><a href="#">HIRE DEVELOPERS</a></li>
+            <li><a href="#">ABOUT</a></li>
+        </ul>
+        <a href="#" class="btn-talk">Let's Talk</a>
+    </nav>
+
+    <div class="header-section">
+        <h1>Our Offerings</h1>
+        <p>Our subject matter experts ensure transformative technologies and impressive scale.</p>
+    </div>
+
+    <div class="offerings-container">
+        <!-- VoIP Development -->
+        <div class="card">
+            <h2>VoIP Development</h2>
+            <p>Quality communication propels ambitions. We build sustainable, scalable real-time communication tools.</p>
+            <div class="tech-icons">
+                <div class="tech-item"><div class="icon-placeholder"></div><br>Freeswitch</div>
+                <div class="tech-item"><div class="icon-placeholder"></div><br>Asterisk</div>
+                <div class="tech-item"><div class="icon-placeholder"></div><br>Opensips</div>
+            </div>
+        </div>
+
+        <!-- Mobile App Development -->
+        <div class="card">
+            <h2>Mobile App Development</h2>
+            <p>Extend your reach with highly engaging mobile applications that fuel returns and adaptability.</p>
+            <div class="tech-icons">
+                <div class="tech-item"><div class="icon-placeholder"></div><br>Android</div>
+                <div class="tech-item"><div class="icon-placeholder"></div><br>iOS</div>
+                <div class="tech-item"><div class="icon-placeholder"></div><br>Flutter</div>
+            </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="card">
+            <h2>Web Development</h2>
+            <p>Reduce bounce rates and improve returning visitors with an enchanting digital presence.</p>
+            <div class="tech-icons">
+                <div class="tech-item"><div class="icon-placeholder"></div><br>React</div>
+                <div class="tech-item"><div class="icon-placeholder"></div><br>Node.js</div>
+                <div class="tech-item"><div class="icon-placeholder"></div><br>Laravel</div>
+            </div>
+        </div>
+
+        <!-- DevOps Services -->
+        <div class="card">
+            <h2>DevOps Services</h2>
+            <p>Propel business scale by harmonizing development and operations to build quality products.</p>
+            <div class="tech-icons">
+                <div class="tech-item"><div class="icon-placeholder"></div><br>Docker</div>
+                <div class="tech-item"><div class="icon-placeholder"></div><br>Git</div>
+                <div class="tech-item"><div class="icon-placeholder"></div><br>Ansible</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

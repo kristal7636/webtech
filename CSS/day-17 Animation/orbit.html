@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;  
+        }
+        .moon-orbit{
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            position: absolute;
+            animation: rotate 5s linear infinite;
+            border: 2px dotted blue;
+        }
+        .moon{
+            width: 80px;
+            height: 80px;
+            background-image: url(https://images-assets.nasa.gov/image/PIA00405/PIA00405~large.jpg?w=1920&h=1920&fit=clip&crop=faces%2Cfocalpoint);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 105%;
+            border-radius: 50%;
+            transform: translate(25px,10px);
+        }
+        .earth{
+            width: 300px;
+            height: 300px;
+            background-image: url(https://media.istockphoto.com/id/172248581/photo/earth-and-moon.jpg?s=612x612&w=0&k=20&c=HVu_JuMcDhEGubM99Vj1yKxl9Nz23iNMShHZXP1eS1E=);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 159%;
+            border-radius: 50%;
+            animation: rotate 15s linear infinite;
+        }
+
+        @keyframes rotate{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+        <div class="earth"></div>
+
+    <div class="moon-orbit">
+<div class="moon"></div>
+</div>
+</body>
+</html>

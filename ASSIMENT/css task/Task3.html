@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraping Benefits</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f7f6; /* Background property */
+            color: #333;
+        }
+
+        /* Navbar Styles with Flexbox */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 15px 50px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+            color: #4b2c91;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 5px 10px;
+            transition: 0.3s;
+        }
+
+        /* Different Hover Effects for Navbar Options */
+        .link-1:hover { color: #4b2c91; text-decoration: underline; }
+        .link-2:hover { background-color: #4b2c91; color: white; border-radius: 4px; }
+        .link-3:hover { border-bottom: 2px solid #4b2c91; }
+        .link-4:hover { font-weight: bold; transform: scale(1.1); }
+        .link-5:hover { opacity: 0.6; }
+        .contact-btn {
+            background-color: #2e1a5e;
+            color: white !important;
+            padding: 10px 20px !important;
+            border-radius: 5px;
+        }
+        .contact-btn:hover { background-color: #4b2c91; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+
+        /* Main Content with Flexbox */
+        .header-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .container-wrapper {
+            display: flex;
+            flex-wrap: wrap; /* Allows 6 containers to wrap */
+            justify-content: center;
+            gap: 20px;
+            padding: 20px 50px;
+        }
+
+        /* The 6 Content Containers */
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 350px; /* Width for 3 items per row */
+            box-sizing: border-box;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #4b2c91;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">ACTOWIZ</div>
+        <ul class="nav-links">
+            <li><a href="#" class="link-1">Services</a></li>
+            <li><a href="#" class="link-2">Solutions</a></li>
+            <li><a href="#" class="link-3">Datasets</a></li>
+            <li><a href="#" class="link-4">Web Scrapers</a></li>
+            <li><a href="#" class="link-5">Resources</a></li>
+            <li><a href="#" class="contact-btn">Contact US</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-section">
+        <h1>How Can Businesses Benefit from Web Scraping?</h1>
+        <p>Leverage structured data to improve efficiency and dominate your market.</p>
+    </div>
+
+    <div class="container-wrapper">
+        <!-- 6 Body Containers -->
+        <div class="card">
+            <h3>Extract Valuable Data Insights</h3>
+            <p>Turn websites into structured, ready-to-analyze data for pricing and market trends.</p>
+        </div>
+        <div class="card">
+            <h3>Automate Repetitive Processes</h3>
+            <p>Scrape millions of pages without manual effort to update inventory and track SKUs.</p>
+        </div>
+        <div class="card">
+            <h3>Transform Websites into Business Value</h3>
+            <p>Convert unstructured web content into data that fuels decisions and boosts efficiency.</p>
+        </div>
+        <div class="card">
+            <h3>Fuel AI & Machine Learning</h3>
+            <p>Train smarter models with scraped data to build high-performing AI/ML solutions.</p>
+        </div>
+        <div class="card">
+            <h3>Web Scraping for All Sizes</h3>
+            <p>Scalable services that adapt to your business needs via API or automation.</p>
+        </div>
+        <div class="card">
+            <h3>Gain a Competitive Edge</h3>
+            <p>Stay ahead of rivals by monitoring product launches and shifts in near real-time.</p>
+        </div>
+    </div>
+
+</body>
+</html>

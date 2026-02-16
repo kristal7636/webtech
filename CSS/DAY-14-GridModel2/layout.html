@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout Example</title>
+    <style>
+        .layout{
+            width: 100vw;
+            height: 100vh;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: beige;
+            display: grid;
+            gap: 20px;
+        }
+        .box{
+            padding: 20px;
+            background-color: black;
+            color: wheat;
+            border: 1px solid white;
+        }
+        .header{
+            grid-column: 1/4;
+            background-color: #bade18;
+        }
+        .aside{
+            grid-row: 2/4;
+            background-color: #be4b129e; 
+        }
+        .section{
+            grid-column: 2/4;
+            background-color: #700adcd7;
+        }
+        .main{
+            grid-column: 2/4;
+            background-color: #0de3e7;
+        }
+        .footer{
+            grid-column: 1/4;
+            background-color: #08ee4dc4;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <header class="box header">Header</header>
+        <aside class="box aside">Aside</aside>
+        <section class="box section">Section</section>
+        <main class="box main">Main</main>
+        <footer class="box footer">Footer</footer>
+    </div>
+
+</body>
+</html>

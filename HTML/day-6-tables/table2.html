@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>colspan and rowspan attribute</h1>
+    <table border="1">
+        <!--heading part - thead-->
+        <thead>
+            <tr>
+                <th>emp.id</th>
+                <th>emp.name</th>
+                <th>emp.salary</th>
+            </tr>
+        </thead>
+
+
+        <!-- main content of a table -tbody-->
+         <tbody>
+            <tr>
+                <td>101</td>
+                <td>muttuswamy iyer</td>
+                <td rowspan="2">20000</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>suresh</td>
+            <!--  footer part -tfoot-->
+              <tfoot>
+                <td colspan="2">total employees:</td>
+                <td>2</td>
+              </tfoot>
+            </tr>
+         </tbody>
+    </table>
+</body>
+</html>

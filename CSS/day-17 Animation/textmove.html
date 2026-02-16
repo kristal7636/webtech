@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:black;
+        }
+        .parent{
+            width: 100%;
+            height: 60px;
+            background-color: navy;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        
+        }
+        span{
+            color: #fff;
+            animation: textMove 5s linear infinite;
+        }
+        @keyframes textMove{
+            from{
+                transform: translate(100vh);
+            }
+            to{
+                transform: translate(-800%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <span>🙈big sale today!🙈</span>
+    <span>🙈big sale today!🙈</span>
+    <span>🙈big sale today!🙈</span>
+</div>
+
+</body>
+</html>

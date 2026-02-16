@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .parent{
+            width: 100%;
+            height: 100vh;
+            background-color: indigo;
+            display: grid;
+            grid-template-columns: repeat(4,auto);
+            grid-template-rows: repeat(5,auto);
+            gap:2px ;
+        }
+        .box{
+            padding: 20px;
+            background-color: beige;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-family:Arial, Helvetica, sans-serif;
+            color: white;
+            
+        }
+        #box2{
+            grid-column: 2/4;
+            grid-row: 1/5;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO2SjjhGNdqTv5C-6ALOAdle_WrXq8e3qCVg&s);
+                        background-size: contain;
+
+        }
+        #box4{
+            grid-row: 2/6;
+            grid-column: 1;
+            background-image: url(https://images.pexels.com/photos/18060021/pexels-photo-18060021/free-photo-of-man-is-showing-muscles-at-gym.jpeg);
+            background-size: cover;
+        }
+        #box5{
+            grid-column: 4;
+            grid-row: 2/6;
+            background-color: rgb(25, 24, 24);
+            
+
+        }
+        #box6{
+            background-image: url(https://images.ctfassets.net/qw8ps43tg2ux/7LWHpnIn8vZqHO50lUAkq1/c938bddbe7e7e5d7a61326a935b57d1e/issa-blogheader-fitnessgoals.jpg?fm=webp&w=1440&q=75);
+                        background-size: cover;
+
+        }
+        #box7{
+            background-image: url(https://images.ctfassets.net/qw8ps43tg2ux/3zHyEuszSmCP4tDB5EiuQ0/558d7e59db2215a8d38307f35f7e7722/issa-trainers-tips-getting-started-at-gym.jpg?fm=webp&w=1440&q=75);
+            background-size: cover;
+        }
+        #box1{
+            background-image: url('https://img.freepik.com/free-photo/low-angle-view-unrecognizable-muscular-build-man-preparing-lifting-barbell-health-club_637285-2497.jpg?semt=ais_user_personalization&w=740&q=80');
+            background-size: cover ;
+        }
+        #box3{
+            background-image: url(https://cdn.triathlete.com/wp-content/uploads/2021/12/Strength-Training-for-Triathletes.jpg);
+            background-size: cover;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="parent">
+    <div class="box" id="box1">weight training</div>
+
+    <div class="box" id="box2">fitness</div>
+    <div class="box" id="box3">training program</div>
+    <div class="box" id="box4">agility training</div>
+    <div class="box" id="box5">
+<form><h3>register hare</h3>
+            <input type="text" placeholder="name"><br>
+            <input type="email" placeholder="email address"><br>
+            <textarea name="message" id="message" placeholder="message..."></textarea><br>
+            <button >send now</button>
+</form>
+    </div>
+    <div class="box" id="box6">goal setting</div>
+    <div class="box" id="box7">get started</div>
+</div>
+
+</body>
+</html>

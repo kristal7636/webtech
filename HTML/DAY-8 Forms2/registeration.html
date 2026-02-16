@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><h2>Register Form</h2></legend>
+            <!-- table>tr*10>(td>label)+(td+input) -->
+            <table>
+                <tr>
+                    <td><label for="">FirstName:</label></td>
+                    <td><input type="text" name="firstname" id="firstname" placeholder="Enter Your FirstName.."></td>
+                </tr>
+                <tr>
+                    <td><label for="">LastName:</label></td>
+                    <td><input type="text" name="lastname" id="lastname" placeholder="Enter Your LastName.."></td>
+                </tr>
+                <tr>
+                    <td><label for="">DOB:</label></td>
+                    <td><input type="date" name="DOB" id="DOB"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" id="gender"> Male
+                        <input type="radio" name="gender" id="gender"> Female
+                        <input type="radio" name="gender" id="gender"> Others
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Skills:</label></td>
+                    <td>
+                        <input type="checkbox" name="skills" id="skills"> HTML
+                        <input type="checkbox" name="skills" id="skills"> CSS
+                        <input type="checkbox" name="skills" id="skills"> JavaScript
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Select Your Course:</label></td>
+                    <td>
+                        <select name="Course" id="Course">
+                            <option value="" disabled selected>--Select any one skill--</option>
+                            <option value="Python Full-Stack">Python Full-Stack Course</option>
+                            <option value="Java Full-Stack">Java Full-Stack Course</option>
+                            <option value="Data Science">Data Science</option>
+                            <option value="MernStack">MernStack</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Course Price:</label></td>
+                    <td>
+                        15000<input type="range" name="CoursePrice" id="CoursePrice" min="15000" max="35000" step="5000">35000
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Select a PL For Course:</label></td>
+                    <td>
+                        <input type="text" list="PL">
+                        <datalist id="PL">
+                            <option value="English">English</option>
+                            <option value="Hinglish">Hinglish</option>
+                            <option value="Gujarati">Gujarati</option>
+                            <option value="Hindi">Hindi</option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Address</label></td>
+                    <td>
+                        <textarea name="Address" id="Address" placeholder="Enter Your Address.."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Upload Resume:</label></td>
+                    <td><input type="file" name="Resume" ></td>
+                </tr>
+                <tr>
+                    <td><label for="">Terms & Conditions</label></td>
+                    <td><input type="checkbox" name="T&C">I Accept T&C</td>
+                </tr>
+                <tr>
+                    <td><input type="reset" value="Reset"></td>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
